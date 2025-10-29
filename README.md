@@ -1,13 +1,21 @@
 # Lecteur IPTV Statique (GitHub Pages)
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+Un lecteur IPTV léger et moderne, hébergé sur GitHub Pages, conçu pour se connecter à un portail Stalker et lire des flux TV, films et séries.
 
-Un lecteur IPTV léger et moderne, hébergé sur GitHub Pages, conçu pour lire des flux TV, films et séries à partir de sources M3U ou JSON.
+## ✨ Stack Technique
 
-## 🛠️ Installation et développement local
+-   **Framework** : React (via Vite)
+-   **Styling** : Tailwind CSS
+-   **Player Vidéo** : `hls.js`
+-   **Routage** : `react-router-dom`
+-   **Gestion d'état** : React Context + `localStorage` pour la persistance
+-   **Déploiement CI/CD** : GitHub Actions
+
+## ⚠️ Important : Contraintes CORS
+
+Les portails IPTV n'autorisent **jamais** les requêtes directes depuis un site web hébergé sur un autre domaine. Pour que l'application fonctionne, il est **indispensable** d'utiliser un **proxy CORS**. Vous devrez préfixer l'URL du portail par l'URL de votre propre proxy. Le service de l'application (`src/services/portalService.js`) est conçu pour intégrer facilement cette URL de proxy.
+
+## 🛠️ Installation et Développement Local
 
 1.  **Clôner le dépôt :**
     ```bash
@@ -24,10 +32,7 @@ Un lecteur IPTV léger et moderne, hébergé sur GitHub Pages, conçu pour lire 
     ```bash
     npm run dev
     ```
-    L'application sera disponible sur `http://localhost:5173`.
 
-## 📦 Build et déploiement
+## 📦 Build et Déploiement
 
-Pour créer une version statique de l'application :
-```bash
-npm run build
+Le déploiement sur GitHub Pages est automatisé via GitHub Actions à chaque `push` sur la branche `main`.
