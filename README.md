@@ -7,34 +7,12 @@
 
 Un lecteur IPTV léger et moderne, hébergé sur GitHub Pages, conçu pour lire des flux TV, films et séries à partir de sources M3U ou JSON.
 
-## Contexte
-
-Ce projet a pour but de fournir un lecteur IPTV strictement front-end, hébergé sur un site statique (GitHub Pages). Il offre une interface de type catalogue (grille) pour une navigation intuitive et une expérience utilisateur moderne. Toute communication réseau est gérée côté client, en tenant compte des contraintes CORS.
-
-## ✨ Objectifs principaux
-
-*   **Interface claire** : Une UI réactive et accessible sur desktop et mobile.
-*   **Navigation simple** : Sections dédiées (Direct, Films, Séries, Favoris).
-*   **Recherche puissante** : Filtres par langue, type, qualité et recherche instantanée.
-*   **Lecture fiable** : Support des flux HLS via un player vidéo intégré.
-*   **Gestion locale** : Import de sources M3U/JSON et gestion des préférences et favoris dans le navigateur.
-*   **Déploiement facile** : Conçu pour un déploiement simple et rapide sur GitHub Pages.
-
-## 🚀 Stack technique
-
-*   **Framework** : React (via Vite)
-*   **Styling** : Tailwind CSS
-*   **Player Vidéo** : `hls.js`
-*   **Routage** : `react-router-dom`
-*   **Gestion d'état locale** : React Context + `localStorage`
-*   **Déploiement CI/CD** : GitHub Actions vers GitHub Pages
-
 ## 🛠️ Installation et développement local
 
 1.  **Clôner le dépôt :**
     ```bash
-    git clone [URL_DU_REPO]
-    cd [NOM_DU_REPO]
+    git clone https://github.com/tpu-3945/IP-TV-player.git
+    cd IP-TV-player
     ```
 
 2.  **Installer les dépendances :**
@@ -50,7 +28,6 @@ Ce projet a pour but de fournir un lecteur IPTV strictement front-end, hébergé
 
 ## 📦 Build et déploiement
 
-Pour créer une version statique de l'application, prête pour le déploiement :
-
+Pour créer une version statique de l'application :
 ```bash
 npm run build
