@@ -5,6 +5,7 @@ import Live from './pages/Live';
 import Movies from './pages/Movies';
 import Series from './pages/Series';
 import Favorites from './pages/Favorites';
+import Settings from './pages/Settings';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/movies" element={<Movies />} />
         <Route path="/series" element={<Series />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Layout>
   );
