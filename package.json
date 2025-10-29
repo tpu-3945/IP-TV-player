@@ -1,8 +1,9 @@
 {
-  "name": "iptv-player-gh-pages",
+  "name": "ip-tv-player",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tpu-3945.github.io/IP-TV-player",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
