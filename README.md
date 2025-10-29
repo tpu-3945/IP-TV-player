@@ -1,4 +1,4 @@
-# Lecteur IPTV Statique (GitHub Pages)
+# Lecteur IPTV Statique (GitHub Pages).
 
 Un lecteur IPTV léger et moderne, hébergé sur GitHub Pages, conçu pour se connecter à un portail Stalker et lire des flux TV, films et séries.
 
